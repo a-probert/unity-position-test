@@ -14,9 +14,15 @@ namespace Project.UI
         
         [SerializeField] private TMP_Text countdownText;
         [SerializeField] private TMP_Text resultText;
-        
+
+        [SerializeField] private Sprite questionmarkSprite;
+        [SerializeField] private Sprite rockSprite;
+        [SerializeField] private Sprite paperSprite;
+        [SerializeField] private Sprite scissorsSprite;
+
         public override void InstallBindings()
         {
+            Container.Bind<RPSModel>().AsSingle().WithArguments(questionmarkSprite, rockSprite, paperSprite, scissorsSprite).NonLazy();
             Container.BindInterfacesAndSelfTo<PlayerInputPresenter>().AsSingle().WithArguments(playerInput).NonLazy();
             
             Container.BindInterfacesAndSelfTo<PlayerSymbolPresenter>().AsSingle().WithArguments(playerSymbol).NonLazy();

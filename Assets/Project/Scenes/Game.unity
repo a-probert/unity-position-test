@@ -1616,6 +1616,10 @@ MonoBehaviour:
   opponentSymbol: {fileID: 1627034594}
   countdownText: {fileID: 1103303774}
   resultText: {fileID: 1288496282}
+  questionmarkSprite: {fileID: 21300000, guid: 30d9a7fc71b754a418e747106b29bf46, type: 3}
+  rockSprite: {fileID: 21300000, guid: 9c0fb2a08b20e154ca4f16e9279f80e4, type: 3}
+  paperSprite: {fileID: 21300000, guid: 266405c65704f4442b8e24d77c9f8106, type: 3}
+  scissorsSprite: {fileID: 21300000, guid: 95091c9a57e5d3649a0d3edb9d340f7e, type: 3}
 --- !u!114 &1981269513
 MonoBehaviour:
   m_ObjectHideFlags: 0
